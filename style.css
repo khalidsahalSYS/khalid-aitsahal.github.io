@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap');
+
+:root {
+  color-scheme: dark;
+  font-family: 'Cairo', sans-serif;
+  background: #0b1120;
+  color: #f8fafc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(ellipse at 50% 40%, rgba(37, 99, 235, 0.2), transparent 55%),
+    #0b1120;
+}
+
+.hero {
+  display: grid;
+  min-height: 100vh;
+  padding: 2rem;
+  place-items: center;
+  text-align: center;
+}
+
+.intro {
+  max-width: 680px;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: #93c5fd;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.description {
+  margin: 1rem 0 2rem;
+  color: #cbd5e1;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+}
+
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #60a5fa;
+  border-radius: 999px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  background: #1d4ed8;
+}
+
+.button:focus-visible {
+  outline: 3px solid #bfdbfe;
+  outline-offset: 4px;
+}
