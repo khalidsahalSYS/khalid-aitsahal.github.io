@@ -7,7 +7,7 @@
 
 ## 🔗 رابط الموقع
 يمكنك زيارة الموقع مباشرة عبر الرابط التالي:
-[https://username.github.io](khalid-aitsahal.github.io
+[https://khalid-aitsahal.github.io](khalid-aitsahal.github.io
 )
 
 ## 🛠️ التقنيات المستخدمة
