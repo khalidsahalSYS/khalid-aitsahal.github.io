@@ -8,13 +8,68 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="hero">
-    <section class="intro" aria-labelledby="page-title">
-      <p class="eyebrow">مرحباً بك</p>
-      <h1 id="page-title">خالد أيت سهل</h1>
-      <p class="description">موقعي الشخصي المطوّر باستخدام HTML وCSS</p>
-      <a class="button" href="mailto:">تواصل معي</a>
+  <header class="site-header">
+    <a class="brand" href="#home">خالد أيت سهل</a>
+    <nav aria-label="التنقل الرئيسي">
+      <a href="#about">نبذة عني</a>
+      <a href="#skills">المهارات</a>
+      <a href="#projects">المشاريع</a>
+      <a href="#contact">تواصل معي</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="page-title">
+      <div class="intro">
+        <p class="eyebrow">مرحباً بك في موقعي الشخصي</p>
+        <h1 id="page-title">خالد أيت سهل</h1>
+        <p class="description">موقعي الشخصي المطوّر باستخدام HTML وCSS</p>
+        <a class="button" href="#about">اكتشف المزيد</a>
+      </div>
+    </section>
+
+    <section class="content-section" id="about" aria-labelledby="about-title">
+      <p class="eyebrow">من أنا؟</p>
+      <h2 id="about-title">نبذة عني</h2>
+      <p class="placeholder">[أضف نبذة قصيرة عنك هنا.]</p>
+    </section>
+
+    <section class="content-section alternate" id="skills" aria-labelledby="skills-title">
+      <p class="eyebrow">ما الذي أجيده؟</p>
+      <h2 id="skills-title">المهارات</h2>
+      <ul class="tag-list" aria-label="قائمة المهارات">
+        <li>[أضف مهارة]</li>
+        <li>[أضف مهارة]</li>
+        <li>[أضف مهارة]</li>
+      </ul>
+    </section>
+
+    <section class="content-section" id="projects" aria-labelledby="projects-title">
+      <p class="eyebrow">أعمالي</p>
+      <h2 id="projects-title">المشاريع</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>[اسم المشروع]</h3>
+          <p class="placeholder">[اكتب وصفاً قصيراً للمشروع هنا.]</p>
+          <p class="project-link">[أضف رابط المشروع]</p>
+        </article>
+        <article class="card">
+          <h3>[اسم المشروع]</h3>
+          <p class="placeholder">[اكتب وصفاً قصيراً للمشروع هنا.]</p>
+          <p class="project-link">[أضف رابط المشروع]</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section alternate" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow">يسعدني تواصلك</p>
+      <h2 id="contact-title">تواصل معي</h2>
+      <p class="placeholder">[أضف بريدك الإلكتروني أو روابط حساباتك هنا.]</p>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> خالد أيت سهل</p>
+  </footer>
 </body>
 </html>
